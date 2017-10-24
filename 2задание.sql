@@ -1,6 +1,3 @@
-/* Со 2 заданием возникли сложности. Удалось только подсчитать кол-во символов в строке в запросе.*/
-
-
 CREATE TABLE Art (
 	id_Art int NOT NULL PRIMARY KEY,
 	Value varchar(50)
@@ -8,8 +5,8 @@ CREATE TABLE Art (
 
 INSERT INTO Art VALUES (1,'dsdsds23232');
 
-/*Следующий запрос рабочий: */
-select id_Art AS ID, len(Art.Value) AS 'Количество символов'
+/*Г‘Г«ГҐГ¤ГіГѕГ№ГЁГ© Г§Г ГЇГ°Г®Г± Г°Г ГЎГ®Г·ГЁГ©: */
+select id_Art AS ID, len(Art.Value) AS 'ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® Г±ГЁГ¬ГўГ®Г«Г®Гў'
 	from Art
 	where Art.Value like '%[^0-9]%';
 

@@ -1,4 +1,3 @@
-/* С 1 заданием проблем не возникло:*/
 
 CREATE TABLE Users (
 	id_Users int NOT NULL PRIMARY KEY,

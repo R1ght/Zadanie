@@ -1,4 +1,4 @@
-/* С 1 заданием справился, сложностей не возникло*/
+/* РЎ 1 Р·Р°РґР°РЅРёРµРј РїСЂРѕР±Р»РµРј РЅРµ РІРѕР·РЅРёРєР»Рѕ:*/
 
 CREATE TABLE Users (
 	id_Users int NOT NULL PRIMARY KEY,
@@ -40,7 +40,7 @@ insert into Users_roles values (3,4)
 insert into Users_roles values (1,2)
 insert into Users_roles values (1,3)
 
-/* Рабочий запрос: */
+/* ГђГ ГЎГ®Г·ГЁГ© Г§Г ГЇГ°Г®Г±: */
 
 SELECT Users.FIO, COUNT(Users.FIO) AS 'Counts roles' FROM Users inner join Users_roles ON Users.id_Users = Users_roles.Users_id_Users inner join Roles on Users_roles.Roles_id_Roles = Roles.id_Roles
 WHERE Roles.Name <> 'Admin'

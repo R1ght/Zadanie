@@ -1,0 +1,31 @@
+program Skobki;
+ 
+{$APPTYPE CONSOLE}
+
+uses
+  SysUtils;
+
+var i,k,res:integer;
+    s:text;
+    str:string;
+begin
+Assign(s,'Text.txt');
+reset(s);
+k:=0;
+res:=0;
+while not eof(S) do
+ begin
+  readln(s,str) ;
+  i:=1;
+  while (i<=length(str))and(res=0) do
+   begin
+    if str[i]='('then inc(k);
+    if str[i]=')'then dec(k);
+    if k<0 then res:=1 else inc(i);
+   end;
+ end;
+if k=0 then write('Skobki korrektni')
+else write('SKobki nekkorektni') ;
+close(s);
+         readln;
+end.

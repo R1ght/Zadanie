@@ -1,0 +1,8 @@
+[
+{
+} },
+{
+"en": {
+"Greatings": "Hello!",
+"Parting": "Bye" }
+} ]
